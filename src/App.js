@@ -28,11 +28,18 @@ function App() {
     localStorage.setItem('todos', JSON.stringify(newTodos));
   };
  
+   const handleEditTodo = (index, newText) => {
+    const newTodos = [...todos];
+    newTodos[index] = newText;
+    setTodos(newTodos);
+    localStorage.setItem('todos', JSON.stringify(newTodos));
+  };
+ 
   return (
     <div>
       <Header />
       <TodoForm onAdd={handleAddTodo} />
-      <TodoList todos={todos} onDelete={handleDeleteTodo} />
+      <TodoList todos={todos} onDelete={handleDeleteTodo} onEdit={handleEditTodo} />
     </div>
   );
 }
