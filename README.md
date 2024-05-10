@@ -2,9 +2,11 @@ Aplicación basada en componentes con REACT
 
 Hacer un git clone con el ssh del proyecto
 
-lanzar en consola npm install para poder instalar los node-modules
+Lanzar en consola npm install para poder instalar los node-modules
 
-lanzar npm start para desplegar la aplicación
+Lanzar npm start para desplegar la aplicación
+
+Creamos un nuevo componente para actualizar las tareas persistiendo los datos
 
 # Getting Started with Create React App
 
